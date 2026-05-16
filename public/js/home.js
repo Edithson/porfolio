@@ -3,12 +3,16 @@ const themeToggleBtn = document.getElementById('theme-toggle');
 const darkIcon = document.getElementById('theme-toggle-dark-icon');
 const lightIcon = document.getElementById('theme-toggle-light-icon');
 
-if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark');
-    lightIcon.classList.remove('hidden');
-} else {
+// Le sombre est le maître absolu, sauf si 'light' est sauvegardé
+if (localStorage.getItem('color-theme') === 'light') {
     document.documentElement.classList.remove('dark');
     darkIcon.classList.remove('hidden');
+    lightIcon.classList.add('hidden');
+} else {
+    // S'il n'y a rien dans le localStorage (première visite) ou si c'est 'dark'
+    document.documentElement.classList.add('dark');
+    lightIcon.classList.remove('hidden');
+    darkIcon.classList.add('hidden');
 }
 themeToggleBtn.addEventListener('click', function () {
     darkIcon.classList.toggle('hidden');

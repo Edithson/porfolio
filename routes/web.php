@@ -16,6 +16,9 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.stor
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'dashboard')->name('dashboard');
+    Route::get('/contacts', [ContactController::class, 'index'])->name('contacts.index');
+    Route::patch('/contacts/{contact}/read', [ContactController::class, 'markAsRead'])->name('contacts.read');
+    Route::delete('/contacts/{contact}', [ContactController::class, 'destroy'])->name('contacts.destroy');
 });
 
 require __DIR__.'/settings.php';
