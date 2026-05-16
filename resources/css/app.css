@@ -59,6 +59,14 @@
     --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
     --color-sidebar-border: var(--sidebar-border);
     --color-sidebar-ring: var(--sidebar-ring);
+
+    --color-dark-bg: #0a0a0a;
+    --color-dark-surface: #171717;
+    --color-dark-border: #262626;
+
+    --color-light-bg: #ffffff;
+    --color-light-surface: #f5f5f5;
+    --color-light-border: #e5e5e5;
 }
 
 :root {
@@ -139,5 +147,21 @@
 
     body {
         @apply bg-background text-foreground;
+    }
+
+    .animate-float {
+        animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
     }
 }
