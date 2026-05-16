@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fonhouo Gaus | Analyste Programmeur</title>
     <!-- intégration de l'icone de la page -->
-    <link rel="icon" href="{{asset('img/icon.png') }}">
+    <link rel="icon" href="{{ $infos['logo'] }}">
 
     @vite(['resources/css/home.css'])
 

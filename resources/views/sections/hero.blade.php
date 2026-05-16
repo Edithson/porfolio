@@ -46,7 +46,7 @@
 
     <div class="hero-img-wrap">
         <!-- Remplacer src par votre photo -->
-        <img src="{{asset('img/img_1.png') }}" alt="Photo de profil de Fonhouo Gaüs"
+        <img src="{{ $infos['image'] }}" alt="Photo de profil de Fonhouo Gaüs"
             onerror="this.parentElement.style.background='linear-gradient(135deg,#27272a 0%,#3f3f46 100%)'">
     </div>
 </section>
