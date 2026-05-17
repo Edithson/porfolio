@@ -40,7 +40,7 @@ class HomeController extends Controller
                 "description" => "Implémentation d'un site dédié à l'archivage et au <strong>téléchargement libre d'anciens livres et cours du Site du Zéro</strong>, permettant de préserver et de rendre accessible ce patrimoine pédagogique.",
                 "image" => "img/projects/zerolib.png",
                 "git_link" => "https://github.com/Edithson/zero_lib_legacy_26.git",
-                "test_link" => "https://zerolib.org", 
+                "test_link" => "https://zerolib.72.62.16.16.nip.io/",
                 "tags" => ["Intégration Web", "Archivage Numérique", "Linux"],
                 "bg_gradient" => "linear-gradient(135deg, #0f172a 0%, #1e293b 100%)",
                 "is_featured" => true // Conserve la mise en page grand format (pleine largeur)
