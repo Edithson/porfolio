@@ -13,7 +13,7 @@
         </blockquote>
         <div class="inline-flex items-center justify-center space-x-4">
             <div class="h-px w-8 bg-zinc-300 dark:bg-zinc-700"></div>
-            <span class="text-sm font-bold tracking-widest text-zinc-500 dark:text-zinc-500 uppercase">La
+            <span class="text-sm font-bold tracking-widest text-zinc-500 dark:text-zinc-500 uppercase">
                 une de mes pensées ;-)</span>
             <div class="h-px w-8 bg-zinc-300 dark:bg-zinc-700"></div>
         </div>
