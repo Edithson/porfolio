@@ -1,11 +1,9 @@
-import type { ImgHTMLAttributes } from 'react';
-
-export default function AppLogoIcon(props: ImgHTMLAttributes<HTMLImageElement>) {
+export default function AppLogoIcon({ className, ...props }: React.ComponentProps<'img'>) {
     return (
-        // importation de mon logo svg
         <img
-            src="/favicon.ico"
-            alt="Logo"
+            src="/img/icon.png"
+            alt="Logo G. Fonhouo"
+            className={className}
             {...props}
         />
     );
