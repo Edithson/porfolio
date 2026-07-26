@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr" class="scroll-smooth dark">
+<html lang="{{ app()->getLocale() }}" class="scroll-smooth dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fonhouo Gaus | Analyste Programmeur</title>
+    <title>{{ __('portfolio.title') }}</title>
     <!-- intégration de l'icone de la page -->
     <link rel="icon" href="{{ $infos['logo'] }}">
 

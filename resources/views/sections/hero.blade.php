@@ -4,20 +4,20 @@
         <p class="text-sm font-semibold tracking-widest text-zinc-500 dark:text-zinc-400 uppercase mb-4">Fonhouo
             Gaüs</p>
         <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
-            Analyste<br>Programmeur.
+            {{ __('portfolio.hero.subtitle') }}<br>{{ __('portfolio.hero.subtitle_break') }}
         </h1>
         <p class="text-xl md:text-2xl text-zinc-600 dark:text-zinc-300 leading-relaxed mb-10">
-            "La programmation est un grand jeu d'imagination et de logique."
+            {{ __('portfolio.hero.tagline') }}
         </p>
 
         <div class="flex flex-wrap gap-4 mb-12">
             <a href="#contact"
                 class="inline-flex items-center justify-center px-6 py-3 bg-zinc-900 dark:bg-zinc-50 text-white dark:text-zinc-900 font-medium rounded-lg hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors">
-                Démarrer un projet
+                {{ __('portfolio.hero.cta_start') }}
             </a>
             <a href="#projets"
                 class="inline-flex items-center justify-center px-6 py-3 border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium rounded-lg hover:border-zinc-500 dark:hover:border-zinc-500 transition-colors">
-                Voir les réalisations
+                {{ __('portfolio.hero.cta_projects') }}
             </a>
         </div>
 
@@ -26,20 +26,17 @@
             <div class="stat-item">
                 <span class="text-3xl font-bold">10+</span>
                 <span
-                    class="text-xs font-semibold tracking-widest uppercase text-zinc-500 dark:text-zinc-400">Projets
-                    livrés</span>
+                    class="text-xs font-semibold tracking-widest uppercase text-zinc-500 dark:text-zinc-400">{{ __('portfolio.hero.stat_projects') }}</span>
             </div>
             <div class="stat-item">
                 <span class="text-3xl font-bold">2</span>
                 <span
-                    class="text-xs font-semibold tracking-widest uppercase text-zinc-500 dark:text-zinc-400">Stacks
-                    maîtrisées</span>
+                    class="text-xs font-semibold tracking-widest uppercase text-zinc-500 dark:text-zinc-400">{{ __('portfolio.hero.stat_stacks') }}</span>
             </div>
             <div class="stat-item">
                 <span class="text-3xl font-bold">∞</span>
                 <span
-                    class="text-xs font-semibold tracking-widest uppercase text-zinc-500 dark:text-zinc-400">Problèmes
-                    résolus</span>
+                    class="text-xs font-semibold tracking-widest uppercase text-zinc-500 dark:text-zinc-400">{{ __('portfolio.hero.stat_problems') }}</span>
             </div>
         </div>
     </div>

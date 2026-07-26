@@ -6,19 +6,16 @@
         <!-- Header -->
         <div class="max-w-2xl mb-20 fade-in">
             <p class="text-xs font-semibold tracking-[0.25em] uppercase text-zinc-400 dark:text-zinc-500 mb-6">
-                Ecclesiaste 11:4</p>
+                {{ __('portfolio.contact.verse') }}</p>
             <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-8 text-zinc-900 dark:text-zinc-50">
-                Celui qui observe le vent<br>
-                <span class="text-zinc-400 dark:text-zinc-500">ne sèmera point.</span>
+                {{ __('portfolio.contact.quote_title') }}<br>
+                <span class="text-zinc-400 dark:text-zinc-500">{{ __('portfolio.contact.quote_title_highlight') }}</span>
             </h2>
             <p class="ecclesiaste-quote text-lg text-zinc-500 dark:text-zinc-400 pl-6">
-                Et celui qui regarde les nuages ne moissonnera point.
+                {{ __('portfolio.contact.quote_subtitle') }}
             </p>
             <p class="mt-6 text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed">
-                Les conditions parfaites n'arrivent jamais. Chaque projet qui a changé quelque chose a commencé
-                par une décision simple : <strong class="text-zinc-900 dark:text-zinc-100">envoyer ce premier
-                    message</strong>.
-                Parlons de ce que vous voulez construire.
+                {{ __('portfolio.contact.p1_prefix') }}<strong class="text-zinc-900 dark:text-zinc-100">{{ __('portfolio.contact.p1_highlight') }}</strong>{{ __('portfolio.contact.p1_suffix') }}
             </p>
         </div>
 
@@ -33,36 +30,36 @@
                         <div class="form-group">
                             <label
                                 class="block text-xs font-semibold tracking-widest uppercase text-zinc-500 dark:text-zinc-400 mb-2"
-                                for="name">Nom complet *</label>
-                            <input id="name" name="name" type="text" placeholder="FONHOUO GAUS" class="form-input"
+                                for="name">{{ __('portfolio.contact.form.name_label') }}</label>
+                            <input id="name" name="name" type="text" placeholder="{{ __('portfolio.contact.form.name_placeholder') }}" class="form-input"
                                 required>
                         </div>
                         <div class="form-group">
                             <label
                                 class="block text-xs font-semibold tracking-widest uppercase text-zinc-500 dark:text-zinc-400 mb-2"
-                                for="email">Adresse e-mail *</label>
-                            <input id="email" name="email" type="email" placeholder="votre@email.com"
+                                for="email">{{ __('portfolio.contact.form.email_label') }}</label>
+                            <input id="email" name="email" type="email" placeholder="{{ __('portfolio.contact.form.email_placeholder') }}"
                                 class="form-input" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label
                             class="block text-xs font-semibold tracking-widest uppercase text-zinc-500 dark:text-zinc-400 mb-2"
-                            for="sujet">Sujet</label>
+                            for="sujet">{{ __('portfolio.contact.form.subject_label') }}</label>
                         <input id="sujet" name="sujet" type="text"
-                            placeholder="Développement d'une application web, collaboration, …" class="form-input">
+                            placeholder="{{ __('portfolio.contact.form.subject_placeholder') }}" class="form-input">
                     </div>
                     <div class="form-group">
                         <label
                             class="block text-xs font-semibold tracking-widest uppercase text-zinc-500 dark:text-zinc-400 mb-2"
-                            for="message">Message *</label>
+                            for="message">{{ __('portfolio.contact.form.message_label') }}</label>
                         <textarea id="message" name="message" rows="6"
-                            placeholder="Décrivez votre projet, vos contraintes, vos ambitions…"
+                            placeholder="{{ __('portfolio.contact.form.message_placeholder') }}"
                             class="form-input resize-none" required></textarea>
                     </div>
                     <button type="submit" id="submit-btn"
                         class="w-full py-4 rounded-xl bg-zinc-900 dark:bg-zinc-50 text-white dark:text-zinc-900 font-semibold text-sm tracking-wide hover:bg-zinc-700 dark:hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2">
-                        <span id="btn-text">Envoyer le message</span>
+                        <span id="btn-text">{{ __('portfolio.contact.form.submit_btn') }}</span>
                         <svg id="btn-arrow" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -81,7 +78,7 @@
                 <div>
                     <p
                         class="text-xs font-semibold tracking-widest uppercase text-zinc-400 dark:text-zinc-500 mb-3">
-                        E-mail direct</p>
+                        {{ __('portfolio.contact.info.direct_email') }}</p>
                     <a href="mailto:moafogaus@gmail.com"
                         class="text-lg font-medium border-b border-zinc-900 dark:border-zinc-50 pb-1 hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors break-all">
                         moafogaus@gmail.com
@@ -90,15 +87,15 @@
                 <div>
                     <p
                         class="text-xs font-semibold tracking-widest uppercase text-zinc-400 dark:text-zinc-500 mb-3">
-                        Localisation</p>
-                    <p class="text-zinc-700 dark:text-zinc-300">Yaoundé, Cameroun</p>
-                    <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-1">Disponible à distance — monde entier
+                        {{ __('portfolio.contact.info.location') }}</p>
+                    <p class="text-zinc-700 dark:text-zinc-300">{{ __('portfolio.contact.info.location_val') }}</p>
+                    <p class="text-sm text-zinc-500 dark:text-zinc-400 mt-1">{{ __('portfolio.contact.info.availability') }}
                     </p>
                 </div>
                 <div>
                     <p
                         class="text-xs font-semibold tracking-widest uppercase text-zinc-400 dark:text-zinc-500 mb-4">
-                        Réseaux</p>
+                        {{ __('portfolio.contact.info.socials') }}</p>
                     <div class="flex flex-col gap-3">
                         <a href="{{ $infos['adr_linkedin'] }}" target="_blank" rel="noopener"
                             class="flex items-center gap-3 text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors group">

@@ -80,8 +80,9 @@ form.addEventListener('submit', async function (e) {
     }
 
     // Loading state
+    const originalBtnText = btnText.textContent;
     submitBtn.disabled = true;
-    btnText.textContent = 'Envoi en cours…';
+    btnText.textContent = document.documentElement.lang === 'fr' ? 'Envoi en cours…' : 'Sending message…';
     btnArrow.classList.add('hidden');
     btnSpinner.classList.remove('hidden');
 
@@ -112,7 +113,7 @@ form.addEventListener('submit', async function (e) {
         console.error('Erreur réseau:', error);
     } finally {
         submitBtn.disabled = false;
-        btnText.textContent = 'Envoyer le message';
+        btnText.textContent = originalBtnText;
         btnArrow.classList.remove('hidden');
         btnSpinner.classList.add('hidden');
     }

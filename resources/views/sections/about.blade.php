@@ -18,8 +18,7 @@
                     class="vibration-ring relative aspect-[4/5] bg-white/70 dark:bg-dark-bg/70 backdrop-blur-xl border border-light-border dark:border-dark-border shadow-2xl p-10 flex flex-col items-center justify-center text-center rounded-2xl group">
                     <p
                         class="font-light italic text-2xl md:text-3xl leading-relaxed text-zinc-800 dark:text-zinc-200 group-hover:scale-105 transition-transform duration-500">
-                        "On s'est retrouvé par la force des circonstances… dans un projet où il fallait construire
-                        un hélicoptère."
+                        {{ __('portfolio.about.quote') }}
                     </p>
                 </div>
             </div>
@@ -27,33 +26,31 @@
 
         <div class="space-y-10 relative z-10 fade-in">
             <h3 class="text-4xl md:text-5xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-                La vibration <br class="hidden md:block"> <span class="text-zinc-400 dark:text-zinc-500">du
-                    cercle.</span>
+                {{ __('portfolio.about.title_line1') }} <br class="hidden md:block"> <span class="text-zinc-400 dark:text-zinc-500">{{ __('portfolio.about.title_line2') }}</span>
             </h3>
             <div class="space-y-6 text-lg font-light leading-relaxed text-zinc-600 dark:text-zinc-300">
                 <p>
-                    Ma passion pour le génie logiciel ne vient pas de la routine, mais de cette quête inoubliable :
-                    construire soi-même ce que l'on aurait pu simplement acheter.
+                    {{ __('portfolio.about.p1') }}
                 </p>
                 <p>
-                    Aujourd'hui, ma mémoire est rafraîchie. Je traite chaque projet comme ce cercle de réflexion où
-                    <span class="font-medium text-zinc-900 dark:text-zinc-100">nos idées nous unissent.</span>
+                    {{ __('portfolio.about.p2_prefix') }}
+                    <span class="font-medium text-zinc-900 dark:text-zinc-100">{{ __('portfolio.about.p2_highlight') }}</span>
                 </p>
             </div>
             <ul class="space-y-5 text-xs tracking-[0.2em] uppercase font-semibold text-zinc-500 dark:text-zinc-400">
                 <li class="flex items-center">
                     <span class="w-1.5 h-1.5 bg-zinc-900 dark:bg-zinc-100 rounded-full mr-5 animate-pulse"></span>
-                    Laravel & React Specialist
+                    {{ __('portfolio.about.badge_specialist') }}
                 </li>
                 <li class="flex items-center">
                     <span class="w-1.5 h-1.5 bg-zinc-900 dark:bg-zinc-100 rounded-full mr-5 animate-pulse"
                         style="animation-delay: 0.3s;"></span>
-                    Full-stack Architecture
+                    {{ __('portfolio.about.badge_architecture') }}
                 </li>
                 <li class="flex items-center">
                     <span class="w-1.5 h-1.5 bg-zinc-900 dark:bg-zinc-100 rounded-full mr-5 animate-pulse"
                         style="animation-delay: 0.6s;"></span>
-                    Bafoussam, Cameroun
+                    {{ __('portfolio.about.badge_location') }}
                 </li>
             </ul>
         </div>

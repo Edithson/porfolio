@@ -6,7 +6,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
     </svg>
     <div>
-        <p class="font-semibold text-sm">Message envoyé !</p>
-        <p class="text-xs opacity-70">Je vous répondrai dans les plus brefs délais.</p>
+        <p class="font-semibold text-sm">{{ __('portfolio.toasts.ok_title') }}</p>
+        <p class="text-xs opacity-70">{{ __('portfolio.toasts.ok_desc') }}</p>
     </div>
 </div>

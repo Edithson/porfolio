@@ -6,7 +6,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
     </svg>
     <div>
-        <p class="font-semibold text-sm">Oups ! Une erreur s'est produite.</p>
-        <p class="text-xs opacity-70">Veuillez vérifier vos informations et réessayer.</p>
+        <p class="font-semibold text-sm">{{ __('portfolio.toasts.error_title') }}</p>
+        <p class="text-xs opacity-70">{{ __('portfolio.toasts.error_desc') }}</p>
     </div>
 </div>

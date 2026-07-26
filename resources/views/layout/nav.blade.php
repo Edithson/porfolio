@@ -8,15 +8,25 @@
             <!-- Desktop nav -->
             <div class="hidden md:flex space-x-6 text-sm font-medium">
                 <a href="#vision"
-                    class="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors">La
-                    Vision</a>
+                    class="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors">{{ __('portfolio.nav.vision') }}</a>
                 <a href="#projets"
-                    class="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors">Réalisations</a>
+                    class="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors">{{ __('portfolio.nav.projects') }}</a>
                 <a href="#about"
-                    class="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors">À
-                    propos</a>
+                    class="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors">{{ __('portfolio.nav.about') }}</a>
                 <a href="#contact"
-                    class="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors">Contact</a>
+                    class="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors">{{ __('portfolio.nav.contact') }}</a>
+            </div>
+
+            <!-- Language Switcher -->
+            <div class="flex items-center bg-light-surface dark:bg-dark-surface border border-light-border dark:border-dark-border rounded-lg p-1 text-xs font-semibold">
+                <a href="{{ route('lang.switch', 'en') }}"
+                   class="px-2.5 py-1 rounded transition-colors {{ app()->getLocale() === 'en' ? 'bg-zinc-900 text-white dark:bg-zinc-50 dark:text-zinc-900 shadow-sm' : 'text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50' }}">
+                   EN
+                </a>
+                <a href="{{ route('lang.switch', 'fr') }}"
+                   class="px-2.5 py-1 rounded transition-colors {{ app()->getLocale() === 'fr' ? 'bg-zinc-900 text-white dark:bg-zinc-50 dark:text-zinc-900 shadow-sm' : 'text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50' }}">
+                   FR
+                </a>
             </div>
 
             <!-- Theme toggle -->
@@ -57,16 +67,16 @@
         <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col space-y-4 text-sm font-medium">
             <a href="#vision"
                 class="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors py-1"
-                onclick="closeMobileMenu()">La Vision</a>
+                onclick="closeMobileMenu()">{{ __('portfolio.nav.vision') }}</a>
             <a href="#projets"
                 class="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors py-1"
-                onclick="closeMobileMenu()">Réalisations</a>
+                onclick="closeMobileMenu()">{{ __('portfolio.nav.projects') }}</a>
             <a href="#about"
                 class="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors py-1"
-                onclick="closeMobileMenu()">À propos</a>
+                onclick="closeMobileMenu()">{{ __('portfolio.nav.about') }}</a>
             <a href="#contact"
                 class="text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 transition-colors py-1"
-                onclick="closeMobileMenu()">Contact</a>
+                onclick="closeMobileMenu()">{{ __('portfolio.nav.contact') }}</a>
         </div>
     </div>
 </nav>
