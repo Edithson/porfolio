@@ -38,7 +38,7 @@ class HomeController extends Controller
                 'description' => __('portfolio.projects.zerolib.description'),
                 'image' => 'img/projects/zerolib.png',
                 'git_link' => 'https://github.com/Edithson/zero_lib_legacy_26.git',
-                'test_link' => 'https://zerolib.72.62.16.16.nip.io/',
+                'test_link' => 'https://zerolib.org',
                 'tags' => __('portfolio.projects.zerolib.tags'),
                 'bg_gradient' => 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
                 'is_featured' => true, // Conserve la mise en page grand format (pleine largeur)
